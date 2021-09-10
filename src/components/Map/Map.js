@@ -9,7 +9,6 @@ const Map = ({center, zoom, countries}) => {
 
   useEffect(() => {
     const max = Math.max.apply(Math, countries.map(elem => elem.cases))
-    console.log(max);
     setState(countries.map(country => {
       return (
         country?.countryInfo?.iso2 && <Circle
@@ -28,8 +27,6 @@ const Map = ({center, zoom, countries}) => {
         </Circle>)
     }))
   }, [countries])
-
-  console.log(state);
 
   return (
     <Wrapper>

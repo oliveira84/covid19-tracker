@@ -50,8 +50,6 @@ function App() {
 
   }, [country, countries])
 
-  console.log(mapCenter);
-
   return (
     <div className="App">
       <Wrapper>
